@@ -1,0 +1,171 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper, sans, swedish, english]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\pdfoutput=1
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{helvet}
+
+\usepackage{lastpage}
+\rfoot{\textit{\small{\thepage/\pageref{LastPage}}}}
+
+\usepackage{fancyhdr}
+\usepackage[iso]{isodate}
+\fancyhead[R]{\today}
+\pagestyle{fancy}
+
+% moderncv themes
+\moderncvstyle{classic}
+
+% adjust the page margins
+\usepackage[scale=0.8, left=1.5cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\setlength{\hintscolumnwidth}{2.5cm}
+
+% personal data
+\name{\Huge Andréas}{\Huge Sundström}
+\title{{\normalsize 940310-3410}}                               % optional, remove / comment the line if not wanted
+\address{Blåsutgatan 9B}{SE-414 56, Gothenburg}{Sweden}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+46\,76-849\,34\,63}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{andsunds@chalmers.se}                               % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+%-----       resume       ---------------------------------------------------------
+
+\makecvtitle
+
+
+\section{Education}
+\cventry{2016--2018}{MSc in Physics and astronomy}{Chalmers University of Technology}{Gothenburg}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2013--2016}{BSc in Engineering Physics}{Chalmers University of Technology}{Gothenburg}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2016--2017}{Exchange studies}{University of
+  Waterloo}{Waterloo, ON, Canada}{}{}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Work experience}
+% \subsection{Vocational}
+\cventry{May 2018--Ongoing}{PhD Student}{Department of Physics,
+  Chalmers University of Technology}{Gothenburg}{}{At the Plasma
+  Physics Theory group. Main focus of the PhD is on kinetic modeling
+  of and collisional effects in laser--plasma interactions} %
+\cventry{Aug 2017}{Student Research Assistant}{Department of
+  Electrical Engineering, Chalmers University of
+  Technology}{Gothenburg}{}{At the Biomedical electromagnetics
+  research group. I and an other student developed a theoretical base
+  for focusing microwaves into tumors.} %
+\cventry{2015--2016}{Teaching Assistant}{Chalmers University of
+  Technology}{Gothenburg}{}{At Mathematical Sciences, leading
+  mathematics and Matlab exercises for first year undergraduate
+  students.} %
+\cventry{Jun--Aug 2014}{Lab assistant}{SKF}{Gothenburg}{}{At the
+  Manufacturing Development Centre (MDC), preparing and testing
+  samples of heat treated steel.}
+
+% \section{Non-profit work}
+% \cventry{2014--ongoing}{Assisting the Swedish national physics competition}{}{}{}{
+%   I have been assisting the organization of the Swedish national high
+%   school physics competition ``Wallenberg Physics Prize''. My tasks have
+%   been to help coming up with ideas for the experimental part of the
+%   national finals, and teaching the Swedish IPhO (International
+%   Physics Olympiad) team at a weekend intensive course in experimental
+%   skills, of which I have taken on full responsibility since 2016.}
+% \cventry{2016 \& 2017}{Observer at IPhO for the Swedish team}{}{}{}{
+%   I have followed the Swedish IPhO team to the Olympiads of 2016 and
+%   2017 as an observer, which entails translating and marking the exam
+%   questions for the Swedish participating high school students. }
+
+% \section{Awards and Scholarships}
+% \cventry{2016}{Scholarship from Kamrathjälpsfonden}{}{}{}{
+%   %Amount: 17\,500~SEK,
+%   For studies in Canada. Managed by the Swedish
+%   Association of Graduate Engineers. }
+% \cventry{2016}{Scholarship from the Albrektska trust funds
+%   (Swe. Albrektska stiftelerna)}{}{}{}{%Amount: 10\,000~SEK,
+%   Based on rate of study and grades. Managed by Chalmers Scholarships.}
+% \cventry{2015}{IPT, 7th place}{}{}{}{International Physicists'
+%   Tournament, a team of six students from each university solves 17
+%   physics problems and present their solutions at the tournament.}
+% \cventry{2015}{Best experimental work}{}{}{}{
+%   In the \textit{Experimental physics} course for engineering physics
+%   students at Chalmers University of Technology. A work which later
+%   resulted in the article \textsl{Measuring g using a rotating liquid
+%     mirror: enhancing laboratory learning}, see Publications.}
+% \cventry{2013}{Wallenberg Physics Prize, 2nd place (individual)}{}{}{}{The Swedish
+%   national physics competition for high school students.}
+% \cventry{2013}{Wallenberg Physics Prize, 1st place in the Team
+%   competition}{}{}{}{The Swedish national physics competition for high
+%   school students. The team competition is comprised of the three best
+%   results from each participating school.}
+% \cventry{2013}{IPhO, Honorable mention}{}{}{}{
+%   International Physics Olympiad, over 80~countries participating with
+%   over 400~students in total -- each country sends up to five
+%   students.}
+% \cventry{2013}{Scholarship from the Folke and Märta Wiesel scholarship
+%   fund}{}{}{}{%Amount: 8\,000~SEK,
+%   For ``\textsl{the graduating student}
+%   [...] \textsl{with the best record in physics}''.}
+% \cventry{2012}{Wallenbergs Physics Prize, 7th place (individual)}{}{}{}{The Swedish
+%   national physics competition for high school students.}
+% \cventry{2012}{IPhO, participated}{}{}{}{
+%   International Physics Olympiad, over 80~countries participating with
+%   over 400~students in total -- each country sends up to five
+%   students.}
+% \begin{flushright}\footnotesize
+% \textit{Any claim to an award is backed by an official certificate.}
+% \end{flushright}
+
+%\newpage
+% \section{Publications}
+% \cvitem{2016}{\textbf{A. Sundström} and T. Adawi, \textsl{Measuring g using a rotating
+%   liquid mirror: enhancing laboratory learning}, Physics Education
+%   \textbf{51}, 053004 (2016).}
+
+
+% \section{Languages}
+% \cvitemwithcomment{Swedish}{Fluent}{Mother tongue}
+% \cvitemwithcomment{English}{IELTS score: 8.0/9.0}{Score from 2016, before
+%   one year in Canada}%Speaking, listenig, reading and writing}
+
+
+% \section{Computer skills}
+% \cvdoubleitem{Programming}{C, Python, Matlab, Bash,}{Software}{Matlab,
+%   \LaTeX, Emacs,}
+% \cvdoubleitem{languages}{Java}{}{UNIX terminal}
+
+
+\end{document}
+
+
+%  LocalWords:  Matlab Wallenbergs fysikpris IPhO
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

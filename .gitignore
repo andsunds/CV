@@ -10,9 +10,9 @@
 *.log
 *.out
 *.toc
-#<namn>.pdf
 
-CV.pdf
+*.pdf
+
 
 #Från Beamer
 *.nav
