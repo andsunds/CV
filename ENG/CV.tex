@@ -6,14 +6,14 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper, sans, swedish, english]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[12pt,a4paper, sans, swedish, english]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 \pdfoutput=1
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{babel}
 \usepackage{helvet}
-
+\usepackage{footmisc}
 \usepackage{lastpage}
 \rfoot{\textit{\small{\thepage/\pageref{LastPage}}}}
 
@@ -21,7 +21,7 @@
 \moderncvstyle{classic}
 
 % adjust the page margins
-\usepackage[scale=0.80, left=1.5cm]{geometry}
+\usepackage[scale=0.80, left=1.cm,right=2.cm]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -29,10 +29,10 @@
 
 % personal data
 \name{\Huge Andréas}{\Huge Sundström}
-\title{{\normalsize 940310-3410}}                               % optional, remove / comment the line if not wanted
+\title{{\normalsize Swedish personal number: 940310-3410}}                               % optional, remove / comment the line if not wanted
 \address{Blåsutgatan 9B}{SE-414 56, Gothenburg}{Sweden}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+46\,76-849\,34\,63}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\email{andsunds@chalmers.se}                               % optional, remove / comment the line if not wanted
+\email{sundstrom.andreas@gmail.com}                               % optional, remove / comment the line if not wanted
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
 %   to show numerical labels in the bibliography (default is to show no labels)
@@ -52,10 +52,24 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2016--(2018)}{MSc in Physics and astronomy}{Chalmers University of Technology}{Gothenburg}{}{}  % arguments 3 to 6 can be left empty
-\cventry{2013--2016}{BSc in Engineering Physics}{Chalmers University of Technology}{Gothenburg}{}{}  % arguments 3 to 6 can be left empty
-\cventry{2016--2017}{Exchange studies}{University of
-  Waterloo}{Waterloo, ON, Canada}{}{}
+% arguments 3 to 6 can be left empty
+\cventry{2018--(2022)}{PhD in Physics}{Chalmers University of Technology}{Gothenburg}{}{%
+Title of thesis: \textit{Collisional effects and attosecond
+  diagnostics in laser-generated plasmas}.}
+%
+\cventry{2013--2018}{Diploma engineer in Engineering Physics}{Chalmers University of Technology}{Gothenburg}{}{}
+%
+\cventry{2013--2018}{MSc in Physics and astronomy}{Chalmers University of Technology}{Gothenburg}{}{%
+Title of thesis: \textit{Effects of electron trapping and ion collisions on electrostatic shocks}}
+%
+\cventry{2016--2017}{Exchange studies}{University of Waterloo}{Waterloo, ON, Canada}{}{%
+Forth year of studies in Canada.}
+%
+\cventry{2013--2016}{BSc in Engineering Physics}{Chalmers University of Technology}{Gothenburg}{}{%
+Title of thesis: \textit{Brownsk rörelse i celler hos partiklar och
+  filament} (Eng: \emph{Brownian motion inside cells for particles and
+filaments})}
+
 
 %\section{Master thesis}
 %\cvitem{title}{\emph{Title}}
@@ -64,89 +78,214 @@
 
 \section{Work experience}
 % \subsection{Vocational}
+\cventry{2018--(2022)}{PhD student}{Chalmers University of
+  Technology}{Gothenburg}{}{%
+  The research projects that I have been pursuing during my PhD have
+  all been related to numerical and analytical modeling of the
+  interaction between the plasma and electromagnetic fields of
+  high-intensity laser pulses. As a part of my PhD, I have been
+  working closely with collaborators in Lund, Princeton and Paris; the
+  latter as a part of a one-month research visit to Sorbonne
+  University in March 2022.\\
+  During my PhD, I have written several research articles, and
+  presented our work (both as posters and oral
+  presentations) at international conferences.\\
+  I have also had the opportunity to teach mechanics and vector-field
+  theory to the Engineering physics students.  }
+% 
 \cventry{Aug 2017}{Student Research Assistant}{Chalmers University of
   Technology}{Gothenburg}{}{At the Department of Electrical
   Engineering, Biomedical electromagnetics research group. I and an
   other student developed a theoretical base for focusing microwaves
   into tumors.}
+% 
 \cventry{2015--2016}{Teaching Assistant}{Chalmers University of
-  Technology}{Gothenburg}{}{At Mathematical Sciences, leading
-  mathematics and Matlab exercises for first year undergraduate students.}
+  Technology}{Gothenburg}{}{At Mathematical Sciences, tutoring
+  mathematics and Matlab for first year undergraduate students.}
+% 
 \cventry{Jun--Aug 2014}{Lab assistant}{SKF}{Gothenburg}{}{At the
   Manufacturing Development Centre (MDC), preparing and testing
   samples of heat treated steel.}
+% 
 
+\newpage
 \section{Non-profit work}
-\cventry{2014--ongoing}{Assisting the Swedish national physics competition}{}{}{}{
+\cventry{2014--2020}{Assisting the Swedish national physics competition}{}{}{}{
   I have been assisting the organization of the Swedish national high
   school physics competition ``Wallenberg Physics Prize''. My tasks have
   been to help coming up with ideas for the experimental part of the
   national finals, and teaching the Swedish IPhO (International
   Physics Olympiad) team at a weekend intensive course in experimental
-  skills, of which I have taken on full responsibility since 2016.}
+  skills, of which I took on full responsibility since 2016.}
+%
+\cventry{2019}{Team co-leader at NBPhO for the Swedish team}{}{}{}{
+   I was one of two team leaders for the Swedish team at the
+   Nordic--Balitic Physics Olympiad 2019, held in Tallin, Estonia. As
+   the team leaders, we looked after the team of approximately 20
+   high-school students during the competition. We also had
+   responsibility of coming up with and debating exam problems, as
+   well as correcting the exams.}
+%
 \cventry{2016 \& 2017}{Observer at IPhO for the Swedish team}{}{}{}{
   I have followed the Swedish IPhO team to the Olympiads of 2016 and
   2017 as an observer, which entails translating and marking the exam
   questions for the Swedish participating high school students. }
 
+%\newpage
 \section{Awards and Scholarships}
+\cventry{2021}{Scholarship from the Adlerbertska research fund}{}{}{}{
+  %Amount: 49\,000~SEK,
+  For a one-month research visit to Sorbonne University. The
+  scholarship is awarded based on a research proposal submitted to
+  Kungliga Vetenskaps- och Vitterhets-Samhället i Göteborg (KVVS). }
+%
+\cventry{2019}{John Ericsson Medal}{}{}{}{
+The John Ericsson Medal is awarded yearly to the five graduates
+with the highest average grades across all of Chalmers. }
+%
 \cventry{2016}{Scholarship from Kamrathjälpsfonden}{}{}{}{
   %Amount: 17\,500~SEK,
   For studies in Canada. Managed by the Swedish
   Association of Graduate Engineers. }
-\cventry{2016}{Scholarship from the Albrektska trust funds
+% 
+\cventry{2016}{Scholarship from the Adlerbertska trust funds
   (Swe. Albrektska stiftelerna)}{}{}{}{%Amount: 10\,000~SEK,
-  Based on rate of study and grades. Managed by Chalmers Scholarships.}
+  Based on rate of study and grades. Managed by Chalmers
+  Scholarships.} %
+%
 \cventry{2015}{IPT, 7th place}{}{}{}{International Physicists'
   Tournament, a team of six students from each university solves 17
-  physics problems and present their solutions at the tournament.}
+  physics problems and present their solutions at the tournament.} %
+%
 \cventry{2015}{Best experimental work}{}{}{}{
   In the \textit{Experimental physics} course for engineering physics
   students at Chalmers University of Technology. A work which later
   resulted in the article \textsl{Measuring g using a rotating liquid
     mirror: enhancing laboratory learning}, see Publications.}
+%
 \cventry{2013}{Wallenberg Physics Prize, 2nd place (individual)}{}{}{}{The Swedish
   national physics competition for high school students.}
+%
 \cventry{2013}{Wallenberg Physics Prize, 1st place in the Team
   competition}{}{}{}{The Swedish national physics competition for high
   school students. The team competition is comprised of the three best
   results from each participating school.}
+%
 \cventry{2013}{IPhO, Honorable mention}{}{}{}{
   International Physics Olympiad, over 80~countries participating with
   over 400~students in total -- each country sends up to five
   students.}
+%
 \cventry{2013}{Scholarship from the Folke and Märta Wiesel scholarship
   fund}{}{}{}{%Amount: 8\,000~SEK,
-  For ``\textsl{the graduating student}
-  [...] \textsl{with the best record in physics}''.}
+  For ``\textsl{the graduating student} [...] \textsl{with the best
+    record in physics}'' from Hvitfeldtska high school, Gothenburg.}
+%
 \cventry{2012}{Wallenbergs Physics Prize, 7th place (individual)}{}{}{}{The Swedish
   national physics competition for high school students.}
+%
 \cventry{2012}{IPhO, participated}{}{}{}{
   International Physics Olympiad, over 80~countries participating with
   over 400~students in total -- each country sends up to five
   students.}
 \begin{flushright}\footnotesize
-\textit{Any claim to an award is backed by an official certificate.}
+\textit{Any claims to an award can be backed by an official certificate.}
 \end{flushright}
 
+
 %\newpage
-\section{Publications}
-\cvitem{2016}{\textbf{A. Sundström} and T. Adawi, \textsl{Measuring g using a rotating
-  liquid mirror: enhancing laboratory learning}, Physics Education
-  \textbf{51}, 053004 (2016).}
-
-
 \section{Languages}
 \cvitemwithcomment{Swedish}{Fluent}{Mother tongue}
-\cvitemwithcomment{English}{IELTS score: 8.0/9.0}{Score from 2016, before
-  one year in Canada}%Speaking, listenig, reading and writing}
+\cvitemwithcomment{English}{Fluent}{Both written and spoken daily in current work}
 
 
 \section{Computer skills}
-\cvdoubleitem{Programming}{C, Python, Matlab, Bash,}{Software}{Matlab,
-  \LaTeX, Emacs,}
-\cvdoubleitem{languages}{Java}{}{UNIX terminal}
+% \cvdoubleitem{Programming}{C, Python, Matlab, Bash,}{Software}{Matlab,
+%   \LaTeX, Emacs,}
+% \cvdoubleitem{languages}{Java}{}{UNIX terminal, Particle-in-Cell
+%   codes}
 
+\cventry{Programming languages}{Python, C, C++, \LaTeX{}, \textsc{Matlab}}{}{}{Java, Bash}{%
+  As a part of my PhD I have extensively used a massively parallel
+  ``particle-in-cell'' (PIC) plasma-simulation code on large
+  computational clusters. The PIC code is written in C++ with a user
+  interface in Python; I have developed several post-processing tools
+  implemented in \textbf{Python} for the output from the PIC
+  simulations. I have also implemented a special diffusion module in
+  the \textsc{dream}\footnotemark{} fusion-research code, written in
+  \textbf{C++}. \\
+  \textsc{Matlab} was extensively used during my BSc and MSc studying
+  period, as well as the first year of my PhD. As my MSc diploma
+  project I used \textbf{\textsc{Matlab}} to developed and implemented
+  a package for calculating the electrostatic potential of a shock
+  wave in a plasma. }
+%\stepcounter{footnote}
+\footnotetext{GitHub:
+  \url{https://github.com/chalmersplasmatheory/DREAM}\quad
+  Documentation: \url{https://ft.nephy.chalmers.se/dream/}}
+%
+\cventry{Other software}{Emacs, Git, UNIX terminal}{}{}{}{}
+
+\section{Leisure activities and hobbies}
+\cvitem{Sailing}{I sail on the Swedish West coast for a least two week
+  every summer.}
+%
+\cvitem{Electronics}{I have a small electronics lab, in which I
+  sometimes build smaller electronic projects, e.g.\ a central clock,
+  timed by the 50\,Hz mains frequency, that control an old secondary
+  clock via alternating pulses every minute. }
+%
+\cvitem{Classic car}{I own a 1965 Volvo Amazon, for the express
+  purpose of having something ``where I can get my hands dirty''. I
+  enjoy working on the car as a break from the computer-bound life in
+  the office.}
+%
+\cvitem{Photography}{I like to shoot with my old Hasselblad
+  and Leica (analog) cameras. I also develop black\,\&\,white film at
+  home.}
+
+
+\newpage
+\section{Publications}
+\newcommand{\doi}[1]{\textsc{doi}:~\href{http/doi.org/#1}{#1}} 
+%
+\cvitem{2022}{\textbf{A. Sundström}, M. Grech, I. Pusztai~\& C. Riconda.
+2022 \textsl{Stimulated-Raman-scattering amplification of attosecond
+XUV pulses and application to local in-depth plasma-density
+measurement}. %
+Submitted to Physical Review E
+\href{http://arxiv.org/abs/2207.06761}{http://arxiv.org/abs/2207.06761}} 
+%
+\cvitem{2022}{\textbf{A. Sundström}, I. Pusztai, P. Eng-Johnsson~\&
+  T. Fülöp. 2022 \textsl{Attosecond dispersion as a diagnostics tool
+    for solid- density laser-generated plasmas}. %
+  Journal of Plasma Physics \textbf{88} (2), 905880\,211,
+  \doi{10.1017/S0022377822000307}}
+
+%
+\cvitem{2020}{\textbf{A. Sundström}, E. Siminos, L. Gremillet~\&
+  I. Pusztai, 2020 \textsl{Collisional effects on the ion dynamics in
+    thin-foil targets driven by an ultraintense short pulse laser}. %
+  Plasma Physics and Controlled Fusion \textbf{62} (8), 085\,015,
+  \doi{10.1088/1361-6587/ab9a62}}
+%
+\cvitem{2020}{\textbf{A. Sundström}, E. Siminos, L. Gremillet~\&
+  I. Pusztai, 2020 \textsl{Fast collisional electron heating and
+    relaxation with circularly polarized ultraintense short-pulse
+    laser}. %
+  Journal of Plasma Physics \textbf{86}, 755860\,201,
+  \doi{10.1017/S0022377820000264}} 
+% 
+\cvitem{2019}{\textbf{A. Sundström}, J. Juno, J.M.\ TenBarge \&
+  I. Pusztai. 2019 \textsl{Effect of a weak ion collisionality on the
+    dynamics of kinetic electrostatic shocks}. %
+  Journal of Plasma Physics \textbf{85}, 905850\,108 
+  \doi{10.1017/S0022377819000023}}
+%
+\cvitem{2016}{\textbf{A. Sundström} and T. Adawi. 2016 \textsl{Measuring g
+    using a rotating liquid mirror: enhancing laboratory learning}. %
+  Physics Education \textbf{51}, 053004 
+  \doi{10.1088/0031-9120/51/5/053004}}
 
 \end{document}
 
